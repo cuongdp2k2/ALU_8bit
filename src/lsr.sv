@@ -1,0 +1,13 @@
+/* verilator lint_off UNUSED */
+module lsr(
+    input logic [7:0] data_i ,
+    input logic [3:0] shamt_i ,
+
+    output logic [7:0] data_o 
+);
+    logic [2:0] limited_shamt ;
+    assign limited_shamt = (data_i < 8) ? shamt_i[2:0] : 3'b111 ; 
+    assign data_o = data_i >> limited_shamt ;
+
+endmodule : lsr
+/* verilator lint_on UNUSED */

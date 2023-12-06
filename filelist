@@ -1,0 +1,10 @@
+./src/add.sv
+./src/alu.sv
+./src/andALU.sv
+./src/fulladder.sv
+./src/lsl.sv
+./src/lsr.sv
+./src/notALU.sv
+./src/orALU.sv
+./src/sub.sv
+
